@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .biography, .work-in-progress, .conferences {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+        .picture {
+            flex: 1 1 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .picture img {
+            max-width: 100%;
+            height: auto;
+        }
+        .logos {
+            flex: 1 1 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logos a {
+            text-decoration: none;
+        }
+        .logos img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+<div class="container">
+    <div class="biography">
+        <h2>BIOGRAPHY</h2>
+        <p>Nel mezzo del cammin di nostra vita<br>
+        mi ritrovai per una selva oscura<br>
+        ché la diritta via era smarrita.</p>
+        <p>Ahi quanto a dir qual era è cosa dura<br>
+        esta selva selvaggia e aspra e forte<br>
+        che nel pensier rinova la paura!</p>
+    </div>
 
-<p>My first paragraph.</p>
+    <div class="picture">
+        <div>
+            <p>MY PICTURE</p>
+        </div>
+    </div>
+
+    <div class="logos">
+        <a href="http://example.com/csv"><img src="path-to-csv-logo.png" alt="CSV Logo"><br>CSV with hyperlink</a>
+        <a href="http://example.com/linkedin"><img src="path-to-linkedin-logo.png" alt="LinkedIn Logo"><br>LinkedIn with hyperlink</a>
+    </div>
+
+    <div class="work-in-progress">
+        <h2>WORK IN PROGRESS</h2>
+        <p>Bla bla bla</p>
+    </div>
+
+    <div class="conferences">
+        <h2>CONFERENCES</h2>
+        <p><a href="http://example.com/conference1">Conference 1 with hyperlink</a></p>
+        <p><a href="http://example.com/conference2">Conference 2 with hyperlink</a></p>
+    </div>
+</div>
 
 </body>
 </html>
-
 
